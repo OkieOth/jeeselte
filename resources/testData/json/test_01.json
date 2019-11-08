@@ -1,0 +1,24 @@
+{
+    "node": {
+        "array": [
+            "Item_1",
+            "Item_2",
+            "Item_3",
+            "Item_4"
+        ],
+        "complex": {
+            "child1": {
+                "attrib1": {
+                    "array": [
+                        "Item_1",
+                        "Item_2",
+                        "Item_3",
+                        "Item_4"
+                    ]
+                }
+            },
+            "child2": "I am a string value",
+            "child3": 2.5
+        }
+    }
+}

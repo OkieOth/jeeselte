@@ -1,0 +1,26 @@
+<node>
+    <array>
+        <item>Item_1</item>
+        <item>Item_2</item>
+        <item>Item_3</item>
+        <item>Item_4</item>
+    </array>
+    <complex>
+        <child1>
+            <attrib1>
+                <array>
+                    <item>Item_1</item>
+                    <item>Item_2</item>
+                    <item>Item_3</item>
+                    <item>Item_4</item>
+                </array>
+            </attrib1>
+        </child1>
+        <child2>
+            I am a string value 
+        </child2>
+        <child3>
+            2.5
+        </child3>
+    </complex>
+</node>

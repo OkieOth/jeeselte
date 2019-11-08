@@ -1,0 +1,78 @@
+{
+    "id": "http://test.de/schemas/jeeselte_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "XSLT like language for JSON",
+    "type": "object",
+    "properties": {
+        "templates": {
+            "description": "",
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Template"
+            }
+        }
+    },
+    "definitions": {
+        "Template": {
+            "type": "object",
+            "properties": {
+                "mode": {
+                    "description": "",
+                    "type": "string"
+                },
+                "match": {
+                    "description": "",
+                    "type": "string"
+                },
+                "applyTemplates": {
+                    "description": "",
+                    "$ref": "#/definitions/ApplyTemplates"
+                },
+                "copy": {
+                    "description": "",
+                    "$ref": "#/definitions/Copy"
+                },
+                "skip": {
+                    "description": "",
+                    "type": "boolean"
+                }
+            },
+            "allOf": [
+                {
+                    "required": ["match"]
+                },
+                {
+                    "oneOf": [
+                        {
+                            "required":["applyTemplates"]
+                        },
+                        {
+                            "required":["copy"]
+                        },
+                        {
+                            "required":["skip"]
+                        }
+                    ]
+                }
+            ]
+        },
+        "Copy": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "dummy": {
+                    "type": "string"
+                }
+            }
+        },
+        "ApplyTemplates": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "dummy": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
