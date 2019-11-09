@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <node>
     <array>
         <item>Item_1</item>
@@ -22,5 +23,22 @@
         <child3>
             2.5
         </child3>
+        <child4>
+            <complex2>
+                <test1>He-Man</test1>
+                <test2>Sceletor</test2>
+                <test3>Battlecat</test3>
+            </complex2>
+            <complex2>
+                <test1>Batman</test1>
+                <test2>Riddler</test2>
+                <test3>Catwoman</test3>
+            </complex2>
+            <complex2>
+                <test1>Spiderman</test1>
+                <test2>Captain America</test2>
+                <test3>Storm</test3>
+            </complex2>
+        </child4>
     </complex>
 </node>

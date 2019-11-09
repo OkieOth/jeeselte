@@ -18,7 +18,30 @@
                 }
             },
             "child2": "I am a string value",
-            "child3": 2.5
+            "child3": 2.5,
+            "child4": [
+                { 
+                    "complex2": {
+                        "test1": "He-Man",
+                        "test2": "Sceletor",
+                        "test3": "Battlecat"
+                    }
+                },
+                { 
+                    "complex2": {
+                        "test1": "Batman",
+                        "test2": "Riddler",
+                        "test3": "Catwoman"
+                    }
+                },
+                { 
+                    "complex2": {
+                        "test1": "Spiderman",
+                        "test2": "Captain America",
+                        "test3": "Storm"
+                    }
+                }
+            ]
         }
     }
 }
