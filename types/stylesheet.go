@@ -3,7 +3,7 @@ Package stylesheet holds the definitions for a transformation stylesheet.
 A transformation stylesheet is a bundle of transformation templates, that
 define how the input should be handled
 */
-package stylesheet
+package types
 
 /*
 Stylesheet type defines the elements of a stylessheet. The file templates will be unmarshaled
