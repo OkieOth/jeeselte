@@ -1,0 +1,16 @@
+{
+    "templates": [
+        {
+            "match": "*",
+            "copy": {
+                "applyTemplates": {
+                    "select": "*"
+                }                
+            }
+        },
+        {
+            "match": "$text()",
+            "valueOf": "."
+        }
+    ]
+}

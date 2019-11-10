@@ -35,6 +35,10 @@
                 "skip": {
                     "description": "",
                     "type": "boolean"
+                },
+                "valueOf": {
+                    "description": "",
+                    "$ref": "#/definitions/ValueOf"
                 }
             },
             "allOf": [
@@ -51,6 +55,9 @@
                         },
                         {
                             "required":["skip"]
+                        },
+                        {
+                            "required":["valueOf"]
                         }
                     ]
                 }
@@ -60,18 +67,50 @@
             "description": "",
             "type": "object",
             "properties": {
-                "dummy": {
-                    "type": "string"
+                "applyTemplates": {
+                    "description": "",
+                    "$ref": "#/definitions/ApplyTemplates"
+                },
+                "content": {
+                    "description": "",
+                    "$ref": "#/definitions/Content"
                 }
-            }
+            },
+            "allOf": [
+                {
+                    "oneOf": [
+                        {
+                            "required":["applyTemplates"]
+                        },
+                        {
+                            "required":["content"]
+                        }
+                    ]
+                }
+            ]
         },
         "ApplyTemplates": {
             "description": "",
             "type": "object",
             "properties": {
-                "dummy": {
+                "select": {
                     "type": "string"
                 }
+            }
+        },
+        "ValueOf": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "select": {
+                    "type": "string"
+                }
+            }
+        },
+        "Content": {
+            "description": "",
+            "type": "object",
+            "properties": {
             }
         }
     }
